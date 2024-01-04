@@ -10,3 +10,95 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* App.css */
+
+.restaurant-app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.header-h1 {
+  margin: 0;
+}
+
+.cart-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-p {
+  margin: 0 10px;
+}
+
+.cart-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-icon p {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #ff4500;
+  color: #fff;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button.active {
+  background-color: #ff4500;
+  color: #fff;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.dish-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dish-item {
+  flex: 1;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.not-available {
+  color: #ff0000;
+}
+
+.button {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #cc3700;
+}
