@@ -1,65 +1,87 @@
-.nav-header {
-  box-shadow: 0px 10px 10px -15px #111;
+.bg-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0px 1px 8px #a7a5a5;
+  width: auto;
 }
-
-.nav-header a {
-  text-decoration: none;
-}
-
-.logo-heading {
-  font-family: 'Roboto';
-  font-weight: 600;
-  font-size: 35px;
-  color: #1f1f1f;
-}
-
-@media screen and (max-width: 576px) {
-  .logo-heading {
-    font-size: 25px;
+@media (min-width: 768px) {
+  .bg-container {
+    display: flex;
   }
 }
-
-.my-orders-text {
+.heading {
   font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+@media (min-width: 768px) {
+  .heading {
+    font-size: 30px;
+    color: black;
+  }
+}
+.card_container {
+  display: flex;
+  align-items: center;
+}
+.my_order {
+  display: flex;
+  font-family: 'Roboto';
+  font-size: 15px;
   font-weight: 500;
-  font-size: 18px;
-  color: #585555;
-  text-decoration: none;
+  color: #000000;
+  margin: 0px 10px 0px 0px;
+}
+@media (min-width: 768px) {
+  .my_order {
+    display: flex;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    margin: 0px 10px 0px 0px;
+  }
+}
+.icon_cart {
+  font-size: 30px;
+  color: #000000;
+  cursor: pointer;
 }
 
-.cart-icon-link {
+.background {
   position: relative;
-}
-
-.cart-icon-button {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  padding: 0;
-}
-
-.cart-icon {
-  font-size: 35px;
-  color: #585555;
-}
-
-.cart-count-badge {
-  background-color: #ff6347;
-  position: absolute;
-  top: -13px;
-  right: -8px;
-  height: 25px;
-  min-width: 25px;
+  background-color: #fb2e01;
+  margin-top: -10px;
+  margin-left: -10px;
   border-radius: 50%;
-  display: grid;
-  place-items: center;
-}
-
-.cart-count {
+  width: 20px;
+  height: 23px;
   text-align: center;
-  color: #ffff;
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 12px;
-  margin: 0;
+  color: #ffffff;
+}
+.link {
+  text-decoration: none;
+  color: #000000;
+}
+.chosenLink {
+  color: #fb2e01;
+}
+.cartButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.buttonLogout {
+  margin: 0px 10px 0px 20px;
+  background-color: blue;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 5px;
+  cursor: pointer;
 }

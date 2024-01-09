@@ -1,41 +1,143 @@
-.cart-page-container {
+.mainCartContainer {
+  border: 1px solid gray;
+  width: 99%;
+  margin: auto;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 10px;
 }
-
-.cart-body-container {
-  flex: 1;
-}
-
-.empty-view-image {
-  width: 80%;
-  max-width: 450px;
-  margin-bottom: 25px;
-}
-
-.empty-description {
-  font-size: 18px;
-  font-weight: 500;
-  font-family: 'Roboto';
-}
-
-.cart-items-header {
-  padding: 25px 0;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.cart-items-header h1 {
-  font-size: 25px;
-  font-family: 'Roboto';
-  font-weight: 500;
-}
-
-.remove-all-btn {
-  font-size: 14px;
-  font-family: 'Roboto';
-  font-weight: 500;
-  padding: 8px 16px;
-  background-color: transparent;
+.removeButton {
+  background-color: blue;
+  color: #ffffff;
+  padding: 5px;
+  font-size: 17px;
   border: none;
-  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.unOrderList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  list-style-type: none;
+}
+.listItem {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid lightgrey;
+  margin: 10px 0px 10px 0px;
+}
+
+@media (min-width: 768px) {
+  .listItem {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid lightgrey;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+  }
+}
+
+.detailsList {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .detailsList {
+    width: 400px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.dishImage {
+  width: 200px;
+  height: 150px;
+}
+
+@media (min-width: 768px) {
+  .dishImage {
+    width: 200px;
+  }
+}
+.detailsDiv {
+  margin: 10px;
+  text-align: center;
+  width: 100px;
+}
+
+.dishName {
+  font-family: 'roboto';
+  font-size: 15px;
+  font-weight: 500;
+}
+.dishPrice {
+  font-family: 'roboto';
+  font-size: 15px;
+  font-weight: 400;
+}
+.quantityAdjst {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80px;
+}
+@media (min-width: 768px) {
+  .quantityAdjst {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    width: 80px;
+  }
+}
+.buttonOperation {
+  font-family: 'roboto';
+  font-size: 15px;
+  font-weight: 400;
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 1px;
+  background-color: lightslategrey;
+}
+.buttonOperation:hover {
+  background-color: brown;
+  color: #ffffff;
+}
+
+.quantity {
+  font-family: 'roboto';
+  font-size: 20px;
+  font-weight: 400;
+}
+.priceContainer {
+  font-family: 'roboto';
+  font-size: 20px;
+  font-weight: 400;
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.emptyViewContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  color: lightgray;
 }

@@ -1,46 +1,42 @@
-.spinner-container {
-  height: 100vh;
-  display: grid;
-  place-items: center;
-}
-
-.tab-container {
-  overflow-y: auto;
-  box-shadow: 0px 10px 10px -15px #111;
-  /* -ms-overflow-style: none;
-  scrollbar-width: none;*/
-}
-/* .tab-container::-webkit-scrollbar {
-  display: none;
-} */
-
-.each-tab-item {
+.menu_container {
+  display: flex;
+  height: 50px;
   list-style-type: none;
-  flex-shrink: 0;
-  flex-grow: 1;
-  padding: 15px 0px;
-  text-align: center;
-  cursor: pointer;
+  box-shadow: 0px 1px lightgray;
+  overflow-x: auto;
+  margin: 10px 10px 0px 10px;
+  align-items: center;
 }
-
-.active-tab-item {
-  color: #ff6347;
-  border-bottom: 2px solid #ff6347;
-  font-weight: 600;
+.list_category {
+  color: black;
+  font-family: 'Roboto';
+  font-weight: 450;
+  width: 500px;
+  margin: 10px;
 }
-
-.tab-category-button {
-  color: inherit;
+.chosen-button {
+  color: #be3228;
   font-family: 'Roboto';
   font-weight: 500;
-  font-size: 18px;
-  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  width: 200px;
+  height: 30px;
   border: none;
   background-color: transparent;
-  color: black;
+  cursor: pointer;
 }
-
-.dishes-list-container {
-  list-style-type: none;
-  padding: 25px;
+.category-button {
+  width: 200px;
+  cursor: pointer;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+}
+.loader-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
